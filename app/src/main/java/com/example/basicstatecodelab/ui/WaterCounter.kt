@@ -27,7 +27,10 @@ fun StatelessCounter(
 ) {
     Column(modifier = modifier.padding(16.dp)) {
         if (count > 0) {
-            Text(text = "You've had $count glasses.")
+            Text(
+                text = "You've had $count glasses.",
+                modifier = Modifier.padding(top = 16.dp)
+            )
         }
         Row(Modifier.padding(top = 8.dp)) {
             Button(
