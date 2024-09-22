@@ -26,10 +26,14 @@ fun StatelessCounter(
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier.padding(16.dp)) {
+        Text(
+            text = "How much cups of water did you drink today?",
+            modifier = Modifier.padding(top = 16.dp)
+        )
         if (count > 0) {
             Text(
-                text = "You've had $count glasses.",
-                modifier = Modifier.padding(top = 16.dp)
+                text = "I've had $count glasses.",
+                modifier = Modifier.padding(top = 8.dp)
             )
         }
         Row(Modifier.padding(top = 8.dp)) {
