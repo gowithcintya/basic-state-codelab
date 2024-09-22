@@ -1,7 +1,8 @@
-package com.example.basicstatecodelab
+package com.example.basicstatecodelab.presentation
 
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
+import com.example.basicstatecodelab.model.WellnessTask
 
 class WellnessViewModel : ViewModel() {
     private val _tasks = getWellnessTasks().toMutableStateList()
@@ -22,6 +23,6 @@ class WellnessViewModel : ViewModel() {
     }
 }
 
-private fun getWellnessTasks() = List(50) { i ->
+private fun getWellnessTasks() = List(30) { i ->
     WellnessTask(i, "Task $i")
 }
